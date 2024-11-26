@@ -1,0 +1,47 @@
+<html>
+    <center>
+    <form>
+        <style>
+            body{
+                background-image: url("http://localhost:3000/images/bkg12345.jpg");
+                background-repeat:no-repeat;
+                background-size: 100% 100%;
+                align-content: center;
+            }
+          </style>
+
+        <table border='2' cellspacing='0' width='90%'>
+            <tr><th><img src="http://localhost:3000/images/logo.png" width='90%'/></th></tr>
+        </table>
+    
+            <table border='2' cellspacing='0' width='90%'>
+            <tr><th>ROLL NUMBER : </th><th><%=detail.txt1%></th></tr>
+            <tr><th>DATE OF BIRTH : </th><th><%=detail.dob%></th></tr>
+            <tr><th>GENDER : </th><th><%=detail.gender%></th></tr>
+            <tr><th><%=sp%> <%=detail.txt2%> <%=fp%> <%=detail.txt3%></th></tr>
+            </table><br><br>
+    
+            <table border='2' cellspacing='0' width='90%'>
+            <tr><th>SUBJECT CODE</th><th>SUBJECT NAME</th><th>MIN MARKS</th><th>MAX MARKS</th><th>MARKS OBTAINED</th><th>GRADES</th></tr>
+            <tr><th>101</th><th>ENGLISH</th><th>35</th><th>100</th><th><%=detail.txt4%></th><th><%=grade[0]%></th></tr>
+            <tr><th>102</th><th>HINDI</th><th>35</th><th>100</th><th><%=detail.txt5%></th><th><%=grade[1]%></th></tr>
+            <tr><th>103</th><th>MATHS</th><th>35</th><th>100</th><th><%=detail.txt6%></th><th><%=grade[2]%></th></tr>
+            <tr><th>104</th><th>PHYSICS</th><th>35</th><th>100</th><th><%=detail.txt7%></th><th><%=grade[3]%></th></tr>
+            <tr><th>105</th><th>CHEMISTRY</th><th>35</th><th>100</th><th><%=detail.txt8%></th><th><%=grade[4]%></th></tr>
+            <tr><th>106</th><th>COMPUTER SC.</th><th>35</th><th>100</th><th><%=detail.txt9%></th><th><%=grade[5]%></th></tr>
+            <tr><th></th><th>TOTAL :</th><th>210</th><th>600</th><th><%=total%></th></tr>
+            </table><br>
+
+            <table border='2' cellspacing='0' width='90%'>
+                <tr><th> PERCENTAGE : </th><th>  <%=percentage%>  </th></tr>
+            </table><br>
+    
+            <table border='2' cellspacing='0' width='90%'>
+            <tr><th> RESULT : </th><th><%=outcome%></th></tr>
+            </table>
+    
+           
+        
+    </form>
+</center>
+</html>
